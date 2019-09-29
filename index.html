@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Train Table</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <header>
+            <div class="jumbotron jumbotron-fluid">
+                    <div class="container">
+                      <h1 class="display-4">Well, GET in.</h1>
+                      <p class="lead">Take a ride on the pain train. <INp></INp>.</p>
+                      <div id="clock" class="clock">loading ...</div>
+                    </div>
+                  </div>
+    </header>
+    <div class="row">
+            <div class="col-lg-12">
+                <div class="card card-default">
+                    <div class="card-header">
+                        Enter New Train Information
+                    </div>
+                    <div class="card-body">
+    
+                        <!-- Sign-up Form (note the various input "types")-->
+                        <form role="form">
+                            <div class="form-group row">
+                                <label for="input-name">Train Name:</label>
+                                <input class="form-control" id="input-name" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="input-dest">Destination:</label>
+                                <input class="form-control" id="input-dest" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="input-time">1st Train Leaves:</label>
+                                <input class="form-control" id="input-time" type="time">
+                            </div>
+                            <div class="form-group row">
+                                    <label for="freq-input">Frequency:</label>
+                                    <input class="form-control" id="input-freq" type="number">
+                                </div>
+                            <button class="btn btn-default" id="add-user" type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery.js"></script>
+    <div class="row">
+        <div class="col-lg-12">
+                <table id="party" class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">First Train</th>
+                            <th scope="col">Frequency</th>
+                            <th scope="col">Next Train</th>
+                            <th scope="col">Minutes Till Next Train</th>
+                          </tr>
+                        </thead>
+                        <tbody id="party">
+
+                        </tbody>
+                      </table>
+        </div>
+    </div>
+
+    
+        <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-analytics.js"></script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/7.0.0/firebase-database.js"></script>
+
+
+
+
+    <script type="text/javascript" src="assets/js/game.js">
+
+    </script>
+
+    <footer></footer>
+</body>
+
+</html>
