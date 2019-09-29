@@ -13,14 +13,50 @@
 
 <body>
     <header>
-            <div class="jumbotron jumbotron-fluid">
-                    <div class="container">
-                      <h1 class="display-4">Well, GET in.</h1>
-                      <p class="lead">Take a ride on the pain train. <INp></INp>.</p>
+            <div class="banner">
+                      <h1>Well, GET in.</h1>
+                      <p>Take a ride on the pain train.</p>
                       <div id="clock" class="clock">loading ...</div>
                     </div>
                   </div>
     </header>
+    
+<div class="container">
+        <video autoplay muted loop id="myVideo">
+                <source src="assets/images/Train_Timelapse.mov" type="video/mp4">
+              </video>
+    <div class="container">
+            <div class="row">
+                    <table id="blank" class="table">
+                            <thead class="rounded">
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Train Name</th>
+                                <th scope="col">Destination</th>
+                                <th scope="col">First Train</th>
+                                <th scope="col">Frequency</th>
+                                <th scope="col">Next Train</th>
+                                <th scope="col">Minutes Till Next Train</th>
+                              </tr>
+                            </thead>
+                            <tbody id="blank">
+    
+                            </tbody>
+                          </table>
+                          <div class="container  train-table">
+                        <table id="party" class="table">
+                                <thead>
+                                </thead>
+                                <tbody id="party">
+        
+                                </tbody>
+                              </table>
+                </div>
+                </div>
+        </div>
+        
+            
+    <div class="container">
     <div class="row">
             <div class="col-lg-12">
                 <div class="card card-default">
@@ -30,7 +66,7 @@
                     <div class="card-body">
     
                         <!-- Sign-up Form (note the various input "types")-->
-                        <form role="form">
+                        <form role="form" >
                             <div class="form-group row">
                                 <label for="input-name">Train Name:</label>
                                 <input class="form-control" id="input-name" type="text">
@@ -53,29 +89,10 @@
                 </div>
             </div>
         </div>
-        <script src="https://code.jquery.com/jquery.js"></script>
-    <div class="row">
-        <div class="col-lg-12">
-                <table id="party" class="table">
-                        <thead>
-                          <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Train Name</th>
-                            <th scope="col">Destination</th>
-                            <th scope="col">First Train</th>
-                            <th scope="col">Frequency</th>
-                            <th scope="col">Next Train</th>
-                            <th scope="col">Minutes Till Next Train</th>
-                          </tr>
-                        </thead>
-                        <tbody id="party">
-
-                        </tbody>
-                      </table>
-        </div>
     </div>
-
-    
+</div>
+        <script src="https://code.jquery.com/jquery.js"></script>
+        
         <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"

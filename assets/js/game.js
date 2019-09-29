@@ -28,6 +28,8 @@ var name = '';
     var virgin = '';
     var freq = '';
 
+var entry = 0;
+
     // Capture Button Click
     $("#add-user").on("click", function(event) {
       event.preventDefault();
@@ -84,7 +86,7 @@ var name = '';
     database.ref().on("child_added", function(snapshot) {
       // storing the snapshot.val() in a variable for convenience
       var sv = snapshot.val();
-
+        entry++
       // Console.loging the last user's data
       console.log(sv.name);
       console.log(sv.dest);
@@ -97,7 +99,7 @@ var name = '';
 
       // Change the HTML to reflect
 
-      $('#party').append('<tr><td></td><td>'+sv.name+'</td><td>'+sv.dest+'</td><td>'+sv.virginConvert+'</td><td>'+sv.tFrequency+'</td><td>'+sv.nTrain+'</td><td>'+sv.tTillTrain+'</td></tr>')
+      $('#party').append('<tr><td>'+entry+'</td><td>'+sv.name+'</td><td>'+sv.dest+'</td><td>'+sv.virginConvert+'</td><td>'+sv.tFrequency+'</td><td>'+sv.nTrain+'</td><td>'+sv.tTillTrain+'</td></tr>')
       // Handle the errors
     }, function(errorObject) {
       console.log("Errors handled: " + errorObject.code);

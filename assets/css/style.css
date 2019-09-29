@@ -1,5 +1,15 @@
+.banner {
+    text-align: center;
+    color: white;
+    max-height: 30vh;
+    background-color: lightblue;
+    padding: 20px;
+    margin-bottom: 20px;
+
+}
 
 .clock {
+    display:inline-block;
     height: 100px;
     width: 70%;
     line-height: 100px;  
@@ -12,4 +22,34 @@
     box-shadow: 0 0 7px #222;
     text-shadow: 0 0 3px #fff;
     font-size: 32px;
+  }
+
+  #myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -2;
+  }
+
+  thead {
+      background-color: lightblue;
+  }
+  .contain {
+      background-color: white;
+  }
+  .train-table {
+      max-height: 150px;
+      overflow: auto;
+      margin: -15px 0px 15px 0px;
+      background-color: white;
+  }
+  .card-style{
+      margin: 10px;
+      font-weight: bold;
+  }
+  .card-header {
+      font-weight: bold;
+    background-color: lightblue;
   }
